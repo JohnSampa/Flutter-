@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/tela_inicio.dart';
+
 
 void main(){
   runApp(LoginApp());  
@@ -62,7 +64,12 @@ class LoginPage extends StatelessWidget {
               ),
                SizedBox(height: 32.0),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TelaInicio()),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor:  const Color.fromARGB(255, 0, 0, 0),
                 foregroundColor: Colors.white,
@@ -76,6 +83,3 @@ class LoginPage extends StatelessWidget {
   }
 
 }
-
-
-
