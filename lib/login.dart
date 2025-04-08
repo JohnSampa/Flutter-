@@ -39,10 +39,10 @@ class LoginPage extends StatelessWidget {
             
           Image.asset(
               'lib/assets/avatar.png',
-              width: 350,
-              height: 250,
+              width: 320,
+              height: 220,
             ),
-
+            Padding(padding: EdgeInsets.all(20)),
             TextFormField(
               decoration: InputDecoration(labelText: 'Email',
               prefixIcon: Icon(Icons.email),
